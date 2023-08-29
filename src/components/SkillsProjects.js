@@ -4,6 +4,7 @@ import Projects from './Projects'
 import CustomSkillTag from './utils/CustomSkillTag'
 import FrameworkTag from './utils/FrameworkTag'
 import ToolTag from './utils/ToolTag'
+import '../css/skills.css'
 
 export default function SkillsProjects() {
     return (
@@ -16,13 +17,13 @@ export default function SkillsProjects() {
                         Projects
                     </Heading>
                     <Text fontSize={'sm'} textAlign='start'>
-                        Please refer to my GitHub Profile.
+                        Please refer to my <a href="https://github.com/ho1225" target="_blank">GitHub Profile</a>.
                     </Text>
                     <Projects />
                 </Box>
 
 
-                <Flex id='skills' width={['md', 'md', 'md']} flexDir={'column'} justifyContent='start' bgColor={'white'} color='black' maxHeight='2xl' minHeight={'4xl'} borderRadius='3xl' p='10' mb={10}>
+                <Flex id='skills' className='skills' width={['xs', 'md', 'md']} flexDir={'column'} justifyContent='start' bgColor={'white'} color='black' maxHeight='2xl' minHeight={'4xl'} overflowY={'scroll'} borderRadius='3xl' p='10' mb={10}>
 
                     <Heading textAlign={'start'}>Skills</Heading>
 

@@ -68,7 +68,7 @@ export default function Header() {
           spacing={6}
         >
           
-          <a href="https://docs.google.com/document/d/1BwfmPBEPqWfVc3ek1tNHB4AIuHcHLDYx/edit" target="_blank">
+          <a href="https://docs.google.com/file/d/1BwfmPBEPqWfVc3ek1tNHB4AIuHcHLDYx/view" target="_blank">
 
           
             <Button
@@ -291,7 +291,7 @@ const NAV_ITEMS = [
     href: "#projects",
   },
   {
-    label: "Freelance",
+    label: "Job Opportunity",
     href: "#freelance",
   },
 ];
