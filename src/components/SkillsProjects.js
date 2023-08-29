@@ -11,10 +11,13 @@ export default function SkillsProjects() {
 
             <Flex width={'100%'} maxW={['full', 'full', '7xl']} justifyContent='center' alignItems={'center'} flexDir={['column', 'column', 'row', 'row']}>
 
-                <Box me={['0', '0', '8']} flexDir={'column'} justifyContent='space-between' bgColor={'white'} color='black' maxHeight='4xl' scrollBehavior={'smooth'} minHeight={'4xl'} borderRadius='3xl' p='10' mb={10}>
+                <Box id='projects' me={['0', '0', '8']} flexDir={'column'} justifyContent='space-between' bgColor={'white'} color='black' maxHeight='4xl' scrollBehavior={'smooth'} minHeight={'4xl'} borderRadius='3xl' p='10' mb={10}>
                     <Heading>
                         Projects
                     </Heading>
+                    <Text fontSize={'sm'} textAlign='start'>
+                        Please refer to my GitHub Profile.
+                    </Text>
                     <Projects />
                 </Box>
 
@@ -34,23 +37,25 @@ export default function SkillsProjects() {
                         {/* Icons  */}
 
                         <Wrap>
-                            <CustomSkillTag skill={'Python'} />
-                            <CustomSkillTag skill={'Javascript'} />
-                            <CustomSkillTag skill={'Dart'} />
+                            <CustomSkillTag skill={'JavaScript'} />
+                            <CustomSkillTag skill={'TypeScript'} />
                             <CustomSkillTag skill={'HTML'} />
-                            <CustomSkillTag skill={'CSS'} />
+                            <CustomSkillTag skill={'CSS/SCSS'} />
+                            <CustomSkillTag skill={'Java'} />
+                            <CustomSkillTag skill={'Kotlin'} />
                         </Wrap>
                     </Box>
                     <Box my={2}>
-                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}> Frameworks</Heading>
+                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}>Libraries & Frameworks</Heading>
                         <Box orientation='horizontal' bgColor='gray.300' my={3} height={0.2} />
                         <Wrap>
-                            <FrameworkTag skill={'Express JS'} />
+                            
                             <FrameworkTag skill={'React JS'} />
-                            <FrameworkTag skill={'Flutter'} />
-                            <FrameworkTag skill={'Next JS'} />
-                            <FrameworkTag skill={'Django'} />
-                            <FrameworkTag skill={'Fastify'} />
+                            <FrameworkTag skill={'Npm'} />
+                            <FrameworkTag skill={'Redux'} />
+                            <FrameworkTag skill={'Node.js'} />
+                            <FrameworkTag skill={'Express JS'} />
+                            <FrameworkTag skill={'React Native'} />
                         </Wrap>
 
                     </Box>
@@ -61,12 +66,14 @@ export default function SkillsProjects() {
 
                         <Wrap>
                             <ToolTag skill={'Postman'} />
-                            <ToolTag skill={'VS Code'} />
-                            <ToolTag skill={'Insomnia'} />
+                            <ToolTag skill={'Webpack'} />
+                            <ToolTag skill={'Adobe Experience Manager(AEM)'} />
                             <ToolTag skill={'Git'} />
                             <ToolTag skill={'Github'} />
-                            <ToolTag skill={'Bitbucket'} />
+                            <ToolTag skill={'Docker'} />
                             <ToolTag skill={'Scrum'} />
+                            <ToolTag skill={'Jenkins'} />
+                            <ToolTag skill={'Netlify'} />
                         </Wrap>
 
                     </Box>

@@ -15,22 +15,25 @@ import {
 const milestones = [
     {
         id: 1,
-        date: '2020',
-        title: 'Simple e-Commerce Website',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
+        date: '2023',
+        title: 'Job Finding Application',
+        description: `An App built with React Native, expo and Rapid API for finding popular jobs, nearby jobs and searching jobs based on key words.`,
+        skills: ['React Native', 'Expo']
     },
     {
         id: 2,
-        date: 'Feb, 2021',
-        title: 'A React Medical Application',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
+        date: '2022',
+        title: 'Simple Shopping List Application',
+        description: `A simple shopping list app demonstrating the MVVM (Model-View-ViewModel) architecture in Android.`,
+        skills: ['React Native', 'Expo']
     },
     {
         id: 3,
         date: '2022',
-        title: 'E-Learning App (Ongoing)',
+        title: 'React Cryptocurrency Website',
         description:
-            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.'
+            'State Management using Redux Toolkit, UI Creation using Ant Design, creating charts using Chart.js, and fetching data from multiple sources using RapidAPI while building a Cryptocurrency App.',
+        skills: ['React Native', 'Expo']
     }
 ];
 
@@ -96,7 +99,7 @@ const Projects = () => {
 
 
 
-const Card = ({ id, title, description, date }) => {
+const Card = ({ id, title, description, date, skills}) => {
     // For even id show card on left side
     // For odd id show card on right side
     const isEvenId = id % 2 === 0;
@@ -110,7 +113,7 @@ const Card = ({ id, title, description, date }) => {
         rightValue = 'unset';
         borderWidthValue = '15px 15px 15px 0';
     }
-
+    
     return (
         <HStack
             flex={1}
@@ -146,8 +149,8 @@ const Card = ({ id, title, description, date }) => {
                 </VStack>
 
                 <HStack>
-                    <Tag variant={'subtle'}>Flutter</Tag>
-                    <Tag variant={'subtle'}>React</Tag>
+                    {/* <Tag variant={'subtle'}>Flutt123er</Tag>
+                    <Tag variant={'subtle'}>React</Tag> */}
                 </HStack>
             </Box>
         </HStack>

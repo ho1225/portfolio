@@ -54,7 +54,7 @@ export default function Header() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }} alignItems='center'>
-          <Image p={2} src={logo} height='20' />
+          {/* <Image p={2} src={logo} height='20' /> */}
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -67,19 +67,24 @@ export default function Header() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            display={{ base: "inline-flex", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"primary.700"}
-            href={"#"}
-            _hover={{
-              bg: "primary.900",
-            }}
-          >
-            View Resume
-          </Button>
+          
+          <a href="https://docs.google.com/document/d/1BwfmPBEPqWfVc3ek1tNHB4AIuHcHLDYx/edit" target="_blank">
+
+          
+            <Button
+              display={{ base: "inline-flex", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"primary.700"}
+              // href={"https://docs.google.com/document/d/1BwfmPBEPqWfVc3ek1tNHB4AIuHcHLDYx/edit"}
+              _hover={{
+                bg: "primary.900",
+              }}
+            >
+              View Resume
+            </Button>
+          </a>
         </Stack>
       </Flex>
 
@@ -254,6 +259,13 @@ const MobileNavItem = ({ label, children, href }) => {
   );
 };
 
+const onDownload = () => {
+  const link = document.createElement("a");
+  link.download = `resume.docx`;
+  link.href = "../../../resume/resume/SeanResume(Front-end).docx";
+  link.click();
+};
+
 const NAV_ITEMS = [
   // {
   //   label: "Find Work",
@@ -276,7 +288,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Projects",
-    href: "#",
+    href: "#projects",
   },
   {
     label: "Freelance",

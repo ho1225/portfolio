@@ -14,29 +14,29 @@ import {
 const milestones = [
     {
         id: 1,
-        date: 'MARCH, 2015',
-        title: 'Completed 10th',
-        description: `fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.`
+        date: '03/2022 - 05/2023',
+        title: 'Application Engineer | Accenture - Global Vendor Company',
+        description: `Served Cathay Pacific Airways, a world top rated airline, contributing to their Wellness Web Team and AsiaMiles Web Team.`
     },
     {
         id: 2,
-        date: 'Feb, 2017',
-        title: 'Completed 12th',
-        description: `fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.`
+        date: '07/2021 - 01/2022',
+        title: 'Software Engineer | Avista Group ',
+        description: `Developed and maintained frontend and backend in-house systems serving 200 users.`
     },
     {
         id: 3,
-        date: 'July 30, 2020',
-        title: 'Completed Graduation',
+        date: '10/2020 - 03/2021',
+        title: 'Software Engineering Intern | Fundingreach ',
         description:
-            'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
+            'Developed and maintained a system of Regulatory Technology serving around 20 clients.'
     },
     {
         id: 4,
-        date: 'July 30, 2022',
-        title: 'Post Grad Ongoing',
+        date: '06/2020 - 08/2020',
+        title: 'Software Engineering Internship | LSCM',
         description:
-            'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
+            ''
     }
 ];
 
